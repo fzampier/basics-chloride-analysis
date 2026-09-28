@@ -14,7 +14,7 @@ All data files, derived data, model fits, figures and outputs are excluded by `.
 
 ## Requirements
 
-R 4.6 with `brms` (Stan backend via `rstan`) and `posterior`; `lubridate` must be installed so the date columns in the data load correctly. The exact versions used are in [`docs/session_info.txt`](docs/session_info.txt). All Bayesian models use fixed random seeds.
+R 4.6 with `brms` (Stan backend via `rstan`), `posterior`, and `lme4`; `lubridate` must be installed so the date columns in the data load correctly. The exact versions used are in [`docs/session_info.txt`](docs/session_info.txt). All Bayesian models use fixed random seeds.
 
 ## Layout
 
@@ -24,6 +24,7 @@ R 4.6 with `brms` (Stan backend via `rstan`) and `posterior`; `lubridate` must b
 | `R/exposure_construction.R` | Post-randomization study-fluid chloride exposure (days 1-3), including the single documented data-entry correction. |
 | `R/basics_chloride_analysis.R` | Analytic cohort, key numbers, exposure validation; writes the derived-data cache. |
 | `R/basics_chloride_brms.R` | Bayesian hierarchical longitudinal model (`arm × day × eGFR`). |
+| `R/analysis1_sensitivity_lme4.R` | Frequentist (lme4) robustness checks of the longitudinal model: participants measured on all three days, and baseline creatinine in place of eGFR. |
 | `R/basics_chloride_varpart.R` | Bayesian variance partition of serum chloride. |
 | `R/reviewer_sensitivity_16_17.R` | Variance-partition sensitivity analyses (kidney replacement therapy exclusion; change from baseline). |
 | `R/reviewer2_analyses.R` | Descriptive intervals, day-2 rationale counts, decomposition of the measured-baseline component, exploratory correlates of patient-specific intercepts, and the randomized-arm sensitivity analysis. |
@@ -38,6 +39,7 @@ With the data in `raw_data/`, from the repository root:
 ```bash
 Rscript R/basics_chloride_analysis.R      # cohort and derived-data cache
 Rscript R/basics_chloride_brms.R          # longitudinal model (slow)
+Rscript R/analysis1_sensitivity_lme4.R    # longitudinal-model robustness checks
 Rscript R/basics_chloride_varpart.R       # variance partition (slow)
 Rscript R/reviewer_sensitivity_16_17.R    # variance-partition sensitivity analyses (slow)
 Rscript R/reviewer2_analyses.R            # additional analyses (slow: one refit)
