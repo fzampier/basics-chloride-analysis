@@ -1,5 +1,9 @@
 # basics-chloride-analysis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23025078.svg)](https://doi.org/10.5281/zenodo.23025078)
+
+The manuscript cites release **v1.0.1** ([10.5281/zenodo.23025078](https://doi.org/10.5281/zenodo.23025078)); all versions: [10.5281/zenodo.23025055](https://doi.org/10.5281/zenodo.23025055).
+
 Analysis code for:
 
 > Zampieri FG, Maia IS, Machado FR, Cavalcanti AB. **Chloride load and serum chloride in critically ill adults: a randomization-anchored analysis of the BaSICS trial.** *Annals of Intensive Care* (under review).
