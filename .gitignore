@@ -1,0 +1,18 @@
+# Patient-level data and anything derived from it must never be committed.
+raw_data/*
+derived_data/*
+model_fits/*
+figures/*
+reproduction/*
+!*/.gitkeep
+*.RData
+*.rda
+*.rds
+*.csv
+*.xlsx
+*.dta
+*.sav
+*.log
+.Rhistory
+.Rproj.user/
+.DS_Store

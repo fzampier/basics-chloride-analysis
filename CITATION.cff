@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and this software."
+title: "Analysis code for: Chloride load and serum chloride in critically ill adults: a randomization-anchored analysis of the BaSICS trial"
+type: software
+license: MIT
+authors:
+  - family-names: Zampieri
+    given-names: Fernando G.
+    affiliation: "Department of Critical Care Medicine, University of Alberta"
+repository-code: "https://github.com/fzampier/basics-chloride-analysis"
+keywords: [BaSICS, chloride, balanced crystalloids, saline, critical care]

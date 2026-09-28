@@ -1,0 +1,11 @@
+{
+  "title": "Analysis code for: Chloride load and serum chloride in critically ill adults: a randomization-anchored analysis of the BaSICS trial",
+  "upload_type": "software",
+  "description": "R code for a secondary analysis of the BaSICS randomized trial (Plasma-Lyte 148 vs 0.9% saline): cohort construction, post-randomization study-fluid chloride exposure, Bayesian hierarchical longitudinal model with eGFR effect modification, randomized normalization and inverse-probability-weighted within-saline association, Bayesian variance partition, sensitivity analyses, Table 1, and Figures 1-4. The patient-level BaSICS data are not included.",
+  "creators": [
+    {"name": "Zampieri, Fernando G.", "affiliation": "Department of Critical Care Medicine, University of Alberta"}
+  ],
+  "license": "MIT",
+  "keywords": ["BaSICS", "chloride", "balanced crystalloids", "saline", "critical care", "Bayesian", "brms", "R"],
+  "access_right": "open"
+}
